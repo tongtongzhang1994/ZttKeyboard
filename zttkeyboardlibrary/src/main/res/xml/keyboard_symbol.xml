@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyHeight="40dip"
+    android:keyWidth="8.33334444%p"
+    android:verticalGap="6dp">
+    <Row>
+        <Key
+            android:codes="33"
+            android:horizontalGap="2dp"
+            android:keyEdgeFlags="left"
+            android:keyLabel="!" />
+        <Key
+            android:codes="34"
+            android:horizontalGap="6dp"
+            android:keyLabel="&quot;" />
+        <Key
+            android:codes="35"
+            android:horizontalGap="6dp"
+            android:keyLabel="#" />
+        <Key
+            android:codes="36"
+            android:horizontalGap="6dp"
+            android:keyLabel="$" />
+
+        <Key
+            android:codes="37"
+            android:horizontalGap="6dp"
+            android:keyLabel="%" />
+
+        <Key
+            android:codes="38"
+            android:horizontalGap="6dp"
+            android:keyLabel="&amp;" />
+        <Key
+            android:codes="39"
+            android:horizontalGap="6dp"
+            android:keyLabel="'" />
+        <Key
+            android:codes="43"
+            android:horizontalGap="6dp"
+            android:keyLabel="+" />
+        <Key
+            android:codes="124"
+            android:horizontalGap="6dp"
+            android:keyLabel="|" />
+        <Key
+            android:codes="59"
+            android:horizontalGap="6dp"
+            android:keyLabel=";" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="40"
+            android:horizontalGap="2dp"
+            android:keyEdgeFlags="left"
+            android:keyLabel="(" />
+        <Key
+            android:codes="41"
+            android:horizontalGap="6dp"
+            android:keyLabel=")" />
+
+        <Key
+            android:codes="91"
+            android:horizontalGap="6dp"
+            android:keyLabel="[" />
+        <Key
+            android:codes="93"
+            android:horizontalGap="6dp"
+            android:keyLabel="]" />
+
+        <Key
+            android:codes="123"
+            android:horizontalGap="6dp"
+            android:keyLabel="{" />
+        <Key
+            android:codes="125"
+            android:horizontalGap="6dp"
+            android:keyLabel="}" />
+
+
+        <Key
+            android:codes="47"
+            android:horizontalGap="6dp"
+            android:keyLabel="/" />
+
+        <Key
+            android:codes="92"
+            android:horizontalGap="6dp"
+            android:keyLabel="\\" />
+
+
+        <Key
+            android:codes="60"
+            android:horizontalGap="6dp"
+            android:keyLabel="&lt;" />
+        <Key
+            android:codes="62"
+            android:horizontalGap="6dp"
+            android:keyLabel="&gt;" />
+
+    </Row>
+    <Row>
+        <Key
+            android:codes="-2"
+            android:horizontalGap="2dp"
+            android:keyEdgeFlags="left"
+            android:keyLabel="123"
+            android:keyWidth="11.000002%p" />
+
+        <Key
+            android:codes="61"
+            android:horizontalGap="6dp"
+            android:keyEdgeFlags="right"
+            android:keyLabel="="
+            android:keyWidth="11.000002%p" />
+        <Key
+            android:codes="45"
+            android:horizontalGap="6dp"
+            android:keyLabel="-"
+            android:keyWidth="8.33334444%p" />
+        <Key
+            android:codes="126"
+            android:horizontalGap="6dp"
+            android:keyLabel="~"
+            android:keyWidth="8.33334444%p" />
+        <Key
+            android:codes="58"
+            android:horizontalGap="6dp"
+            android:keyLabel=":"
+            android:keyWidth="8.33334444%p" />
+        <Key
+            android:codes="94"
+            android:horizontalGap="6dp"
+            android:keyLabel="^"
+            android:keyWidth="8.33334444%p" />
+        <Key
+            android:codes="95"
+            android:horizontalGap="6dp"
+            android:keyLabel="_	"
+            android:keyWidth="8.33334444%p" />
+        <Key
+            android:codes="96"
+            android:horizontalGap="6dp"
+            android:keyLabel="`"
+            android:keyWidth="8.33334444%p" />
+        <Key
+            android:codes="-5"
+            android:horizontalGap="14dp"
+            android:keyEdgeFlags="right"
+            android:keyIcon="@drawable/icon_delete_32dp"
+            android:keyWidth="11.000002%p" />
+    </Row>
+    <Row android:rowEdgeFlags="bottom">
+        <Key
+            android:codes="-6"
+            android:horizontalGap="2dp"
+            android:keyEdgeFlags="left"
+            android:keyLabel=" abc "
+            android:keyWidth="11.000002%p" />
+        <Key
+            android:codes="64"
+            android:horizontalGap="6dp"
+            android:keyLabel="\@"
+            android:keyWidth="8.999998%p" />
+        <Key
+            android:codes="42"
+            android:horizontalGap="6dp"
+            android:keyLabel="*"
+            android:keyWidth="8.999998%p" />
+        <Key
+            android:codes="32"
+            android:horizontalGap="6dp"
+            android:isRepeatable="true"
+            android:keyLabel="空格"
+            android:keyWidth="20.999996%p" />
+        <Key
+            android:codes="44"
+            android:horizontalGap="6dp"
+            android:keyLabel=","
+            android:keyWidth="8.999998%p" />
+        <Key
+            android:codes="46"
+            android:horizontalGap="6dp"
+            android:keyLabel="."
+            android:keyWidth="8.999998%p" />
+        <Key
+            android:codes="-3"
+            android:horizontalGap="6dp"
+            android:keyEdgeFlags="right"
+            android:keyLabel="完成"
+            android:keyWidth="20.000002%p" />
+    </Row>
+</Keyboard>
