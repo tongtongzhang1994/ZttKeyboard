@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:keyHeight="40dp"
+    android:keyHeight="50dp"
     android:keyWidth="8.33334444%p"
     android:verticalGap="6dp">
     <Row>

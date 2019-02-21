@@ -1,29 +1,36 @@
 package com.ztt.zttkeyboardlibrary;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Service;
 import android.content.Context;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.os.Build;
-import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.text.Editable;
 import android.text.InputType;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+
+import com.ztt.zttkeyboardlibrary.KeyModel;
+import com.ztt.zttkeyboardlibrary.OnCancelClick;
+import com.ztt.zttkeyboardlibrary.OnOkClick;
+import com.ztt.zttkeyboardlibrary.R;
 
 import java.lang.reflect.Method;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * @author ztt : 2018-02-23
  */
-public class KeyboardUtils {
+public class AnKeyboardUtils {
 
 	private Activity activity;
 	private KeyboardView keyboardView;
@@ -48,7 +55,7 @@ public class KeyboardUtils {
 		return editText;
 	}
 
-	public KeyboardUtils(Activity context, KeyboardView keyboardView, boolean isRandom) {
+	public AnKeyboardUtils(Activity context, KeyboardView keyboardView, boolean isRandom) {
 		this.activity = context;
 		this.keyboardView = keyboardView;
 		keyboardView.setPreviewEnabled(false);
@@ -102,7 +109,7 @@ public class KeyboardUtils {
 	}
 
 
-	private void hideKeyBoard() {
+	public void hideKeyBoard() {
 		int visibility = keyboardView.getVisibility();
 		if (visibility == KeyboardView.VISIBLE) {
 			keyboardView.setVisibility(KeyboardView.GONE);
@@ -297,6 +304,11 @@ public class KeyboardUtils {
 		return "abcdefghijklmnopqrstuvwxyz".contains(str.toLowerCase());
 	}
 
+
+	public boolean isShow() {
+		return keyboardView.isShown();
+	}
+
 	public void bindEditTextEvent(final EditText editText) {
 
 		editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
@@ -304,6 +316,8 @@ public class KeyboardUtils {
 			public void onFocusChange(View v, boolean hasFocus) {
 				if (hasFocus) {
 					attachTo(editText);
+				} else {
+					hideKeyBoard();
 				}
 			}
 		});

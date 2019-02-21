@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
     android:horizontalGap="1.2%p"
-    android:keyHeight="40dp"
+    android:keyHeight="50dp"
     android:keyWidth="23.5%p"
     android:verticalGap="6dp">
 
@@ -49,7 +49,7 @@
         <Key
             android:codes="-3"
             android:keyEdgeFlags="right"
-            android:keyHeight="86dp"
+            android:keyHeight="106dp"
             android:keyLabel="完成" />
     </Row>
     <Row>
